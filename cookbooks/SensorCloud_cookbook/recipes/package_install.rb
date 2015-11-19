@@ -8,22 +8,21 @@
 #
 
 #Install node.js using package manager
-
-#execute "pre_config_nodejs" do
-#	command "curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -"
-#end
-
-apt_package 'nodejs' do
-	action :install
+execute "pre_config_nodejs" do
+	command "curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -"
 end
 
-#Install npm using package manager
-apt_package 'npm' do
-	action :install
+execute "install_nodejs" do
+	command "sudo apt-get install -y nodejs"
 end
+
+
+execute "install_build-essential" do
+	command "sudo apt-get install -y build-essential"
+end
+
 
 #Creating symbolic link of nodejs to node
-link '/usr/bin/nodejs' do
-	to '/usr/bin/node'
-	link_type :symbolic
+execute "link_nodejs_node" do
+	command "sudo ln -s /usr/bin/nodejs /usr/bin/node"
 end
