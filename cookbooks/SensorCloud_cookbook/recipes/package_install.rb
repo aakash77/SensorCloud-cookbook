@@ -24,5 +24,5 @@ end
 
 #Creating symbolic link of nodejs to node
 execute "link_nodejs_node" do
-	command "sudo ln -s /usr/bin/nodejs /usr/bin/node"
+	command "sudo ln -sf /usr/bin/nodejs /usr/bin/node"
 end
