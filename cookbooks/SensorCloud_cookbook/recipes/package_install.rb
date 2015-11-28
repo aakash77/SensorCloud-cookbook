@@ -26,3 +26,5 @@ end
 execute "link_nodejs_node" do
 	command "sudo ln -sf /usr/bin/nodejs /usr/bin/node"
 end
+
+Chef::Log.info("Packages installed")

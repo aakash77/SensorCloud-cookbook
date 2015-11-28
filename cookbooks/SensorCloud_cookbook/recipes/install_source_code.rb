@@ -20,3 +20,5 @@ git "#{node[:SensorCloud_cookbook][:app_root]}" do
 	revision node[:SensorCloud_cookbook][:git_repo_revision]
 	action :sync
 end
+
+Chef::Log.info("Source code downloaded")
