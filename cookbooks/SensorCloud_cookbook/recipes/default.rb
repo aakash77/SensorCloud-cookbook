@@ -17,6 +17,6 @@ include_recipe "SensorCloud_cookbook::package_install"
 include_recipe "SensorCloud_cookbook::install_source_code"
 
 #Configure Openstack essentials
-include_recipe "SensorCloud_cookbook::configure_openstack"
+#include_recipe "SensorCloud_cookbook::configure_openstack"
 
 Chef::Log.info("**************Deployment completed**************") 

@@ -8,7 +8,7 @@
 #
 
 #Root Directory
-default[:SensorCloud_cookbook][:app_root] = "/usr/home/SensorCloud-App"
+default[:SensorCloud_cookbook][:app_root] = "/home/ubuntu/SensorCloud-App"
 
 default[:SensorCloud_cookbook][:openstack_config_dir] = "#{node[:SensorCloud_cookbook][:app_root]}/openstack"
 
