@@ -11,17 +11,17 @@
 # OpenStack API is version 2.0. For example, your cloud provider may implement
 # Image API v1.1, Block Storage API v2, and Compute API v2.0. OS_AUTH_URL is
 # only for the Identity API served through keystone.
-export OS_AUTH_URL=http://128.136.179.2:5000/v2.0
+export OS_AUTH_URL=<ADD URL>
 
 # With the addition of Keystone we have standardized on the term **tenant**
 # as the entity that owns the resources.
-export OS_TENANT_ID=304d565c25b140d294e08fef8a6b74da
-export OS_TENANT_NAME="facebook10153062570506333"
-export OS_PROJECT_NAME="facebook10153062570506333"
+export OS_TENANT_ID=<ADD TENANT ID>
+export OS_TENANT_NAME="<ADD TENANT NAME>"
+export OS_PROJECT_NAME="<ADD PROJECT NAME>"
 
 # In addition to the owning entity (tenant), OpenStack stores the entity
 # performing the action as the **user**.
-export OS_USERNAME="facebook10153062570506333"
+export OS_USERNAME="<ADD OS USERNAME>"
 
 # With Keystone you pass the keystone password.
 echo "Please enter your OpenStack Password: "
